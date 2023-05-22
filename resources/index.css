@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html{
+  scroll-behavior:smooth;
+  color: #323232;
+} 
+
 html,
 body {
   height: 100%;
@@ -5,7 +12,7 @@ body {
 }
 
 body {
-  background-color: rgb(222, 211, 212);
+  /* background-color: rgb(222, 211, 212); */
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0 16px;
@@ -43,6 +50,32 @@ nav{
 }
 
 
+.about-me-container {
+  border: 2px solid purple;
+  display: flex;
+}
+
+.about-me-text-container {
+  margin-right: 16px;
+  border: 2px solid green;
+}
+
+.portrait {
+  width: 300px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  border: 2px solid yellow;
+}
+
+section {
+  padding: 16px 0;
+}
+
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  margin-bottom: 12px;
+}
 
 h1{
   font-family: "Proza Libre", sans-serif;
@@ -51,3 +84,67 @@ h1{
   border: 2px solid red;
 }
 
+.project-image {
+  width: 50%;
+}
+details {
+  cursor: pointer;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+/* summary {
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+} */
+
+@media only screen and (max-width: 600px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+}
+
+#logo {
+  margin: 0;
+  /* border: 2px solid red; */
+}
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: 12px;
+}
+
+.icon {
+  font-size: 2em;
+  color: #323232;
+  margin: 0 8px;
+}
+
+.heart {
+  color: red;
+}
+
+footer {
+  margin-top: auto;
+  padding: 12px 0;
+  text-align: center;
+}
+
+section {
+  padding: 16px 0;
+}
+
+a {
+  color: #323232;
+  text-decoration: none;
+  font-weight: 600;
+}
